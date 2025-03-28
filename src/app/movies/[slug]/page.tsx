@@ -16,10 +16,10 @@ export default async function MoviesListPage({params: {slug}}: Props) {
     return (
         <>
             <CateGory/>
-            <section className='rounded-2xl overflow-hidden bg-stone-400'>
-                <div className='flex gap-12'>
+            <div className=' rounded-2xl overflow-hidden bg-stone-400 h-[85%] flex items-center mt-10'>
+                <div className='flex gap-12 h-full'>
                     <div className='w-auto'>
-                        <Image src={`/images/${path}.jpeg`} alt={title} width={400} height={200}/>
+                        <Image src={`/images/${path}.jpeg`} alt={title} width={550} height={300}/>
                     </div>
                     <div>
                         <h1 className='text-3xl font-bold my-10 italic'>{title}</h1>
@@ -32,7 +32,7 @@ export default async function MoviesListPage({params: {slug}}: Props) {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     );
 }
